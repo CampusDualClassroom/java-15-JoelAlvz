@@ -1,5 +1,7 @@
 package com.campusdual.classroom;
 
+import java.util.Date;
+
 public abstract class Merchandise {
 
 	protected String name;
@@ -9,6 +11,7 @@ public abstract class Merchandise {
 	protected String area;
 	protected String shelf;
 	protected int quantity;
+
 
 	public Merchandise(String name, String uniqueId, String responsibleId) {
 		this.name = name;
