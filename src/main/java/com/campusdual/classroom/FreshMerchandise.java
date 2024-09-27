@@ -27,7 +27,10 @@ public class FreshMerchandise extends Merchandise {
     public Date getExpirationDate() {
         return expirationDate;
     }
-
+    public String getFormattedDate(Date date) {
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+        return formatter.format(date);
+    }
     public void setExpirationDate(Date expirationDate) {
         this.expirationDate = expirationDate;
     }
